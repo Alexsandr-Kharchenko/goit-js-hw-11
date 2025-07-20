@@ -29,7 +29,7 @@ form.addEventListener('submit', async e => {
 
   clearGallery();
   showLoader();
-  loadingMessage?.classList.remove('hidden'); // показати повідомлення
+  loadingMessage?.classList.remove('hidden');
 
   try {
     const data = await getImagesByQuery(query);
@@ -54,7 +54,7 @@ form.addEventListener('submit', async e => {
     });
   } finally {
     hideLoader();
-    loadingMessage?.classList.add('hidden'); // сховати повідомлення
+    loadingMessage?.classList.add('hidden');
   }
 
   form.reset();

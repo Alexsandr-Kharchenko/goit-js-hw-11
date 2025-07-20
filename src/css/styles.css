@@ -59,7 +59,7 @@ button[type='submit']:hover {
   background-color: #6c8cff;
 }
 
-/* Error block (red box like in Figma) */
+/* Error block */
 .error-message {
   display: flex;
   align-items: center;
