@@ -4,7 +4,6 @@ import {
   clearGallery,
   showLoader,
   hideLoader,
-  lightbox,
 } from './js/render-functions.js';
 
 import iziToast from 'izitoast';
@@ -45,7 +44,6 @@ form.addEventListener('submit', async e => {
       });
     } else {
       createGallery(data.hits);
-      lightbox.refresh();
     }
   } catch (error) {
     iziToast.error({
